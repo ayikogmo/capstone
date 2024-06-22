@@ -3,7 +3,6 @@ from keras.models import load_model
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
-import os
 import cv2
 
 # Set title and header
