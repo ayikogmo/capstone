@@ -9,7 +9,8 @@ import cv2
 def main():
     st.title('KutisNet')
     st.subheader('A CNN-based Skin Disease Image Recognition')
-
+    st.markdown('**Disclaimer:** The KutisNet model is designed and trained specifically for the recognition and classification of dermatological conditions based on images of skin. As such, the accuracy and reliability of its predictions are limited to images that depict skin conditions, specifically **warts**, **psoriasis**, **normal skin**, **eczema**, and **acne**.')
+    st.markdown("**Please note:** Any images that do not represent dermatological conditions, such as images of non-related subjects, objects , or backgrounds, will likely result in incorrect predictions. The model is not equipped to interpret or analyze images outside of its intended scope, and users should refrain from submitting such images for analysis.")
     st.markdown('**Please upload an image**')
     file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
     if file is not None:
